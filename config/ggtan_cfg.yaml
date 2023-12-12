@@ -1,0 +1,19 @@
+batch_size: 128
+hid_dim: 256
+lr: 0.003
+wd: !!float 1e-4
+n_layers: 2
+dropout: [0.2, 0.1]
+device: "cuda:0"
+early_stopping: 10
+n_fold: 5
+seed: 2023
+max_epochs: 15
+gated: True
+dataset: IBM
+test_size: 0.4
+gat_epochs: 300
+gat_learning_rate: 0.01 
+gat_max_class_weight: 4
+gat_use_lpe: True
+gtan_use_pese: False
